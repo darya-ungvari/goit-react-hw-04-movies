@@ -1,0 +1,28 @@
+.castList {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item {
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.item {
+  background-color: whitesmoke;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+img {
+  border-radius: 5px;
+}
+
+.name {
+  text-align: center;
+  color: teal;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+  margin-bottom: 10px;
+}

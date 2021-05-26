@@ -1,0 +1,39 @@
+.list {
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: center;
+  margin: -20px;
+  text-align: center;
+}
+
+.input {
+  border-radius: 3px;
+  outline: 1px solid teal;
+  padding: 24px 12px;
+  width: 500px;
+}
+
+.button {
+  background-color: teal;
+  color: white;
+  height: inherit;
+  padding: 24px 12px;
+}
+
+.form {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 50px;
+}
+
+.section {
+  text-align: center;
+  padding: 50px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 500;
+}

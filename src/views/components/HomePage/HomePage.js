@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import { fetchTrendingMovies, POSTER_URL } from '../../../services/MoviesApi';
-
+import { fetchTrendingMovies } from '../../../services/MoviesApi';
+import s from './HomePage.module.css';
+import MovieItem from '../MovieItem/MovieItem';
 export default class HomePage extends Component {
   state = {
     movies: [],
@@ -13,21 +14,15 @@ export default class HomePage extends Component {
   }
   render() {
     return (
-      <>
+      <section className={s.section}>
         {this.state.movies.length > 0 && (
-          <ul>
+          <ul className={s.list}>
             {this.state.movies.map(movie => (
-              <li key={movie.id}>
-                <h2>{movie.title}</h2>
-                <img
-                  src={`${POSTER_URL}${movie.backdrop_path}`}
-                  alt={movie.title}
-                ></img>
-              </li>
+              <MovieItem movie={movie}></MovieItem>
             ))}
           </ul>
         )}
-      </>
+      </section>
     );
   }
 }

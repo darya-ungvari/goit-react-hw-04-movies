@@ -23,7 +23,6 @@ export function fetchMoviesByName(name) {
 }
 
 export function fetchMovieDetails(id) {
-  console.log(id);
   return fetchWithErrorHandling(
     `${BASE_URL}/movie/${id}?api_key=${API_KEY}&language=en-US`,
   );
